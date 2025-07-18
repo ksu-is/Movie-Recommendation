@@ -25,7 +25,6 @@ movies = [
     {"title": "Kiki's Delivery Service", "genre": "Animation", "year": 90, "age_rating": "G"},
     {"title": "Joker", "genre": "Drama", "year": 10, "age_rating": "R"},
     {"title": "Napolean Dynamite", "genre": "Comedy", "year": 00, "age_rating": "PG"},
-    {"title": "Kiki's Delivery Service", "genre": "Animation", "year": 90, "age_rating": "G"},
     {"title": "Ex Machina", "genre": "Indie", "year": 10, "age_rating": "R"},
     {"title": "1917", "genre": "Thriller", "year": 10, "age_rating": "R"},
     {"title": "Spider-Man: Across the Spider-Verse", "genre": "Animation", "year": 20, "age_rating": "PG"},
