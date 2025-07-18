@@ -138,7 +138,7 @@ def main():
             print("Goodbye! Enjoy your movie or show!")
             break
 
-# Added surprise me option 
+# Added surprise me option
 def main():
     while True: 
         surprise = input("Do you want a random recommendation? (yes/no): ").strip().lower()
