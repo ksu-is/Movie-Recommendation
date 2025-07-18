@@ -11,6 +11,7 @@
 - [x] Removed duplicate Kiki's Delivery Service
 - [x] Added a surprise me section
 - [x] Added Tv show that was drama and rated R from the 20's. This is because there was not one before so this is expanding the options.
+- [x] added an option for multiple genres 
 - [ ] Make small updates and commit messages in repository.    
 
 # Sprint 3:
