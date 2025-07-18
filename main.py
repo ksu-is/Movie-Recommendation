@@ -125,5 +125,34 @@ def main():
             print("Goodbye! Enjoy your movie or show!")
             break
 
+# Added surprise me option 
+def main():
+    while True: 
+        surprise = input("Do you want a random recommendation? (yes/no): ").strip().lower()
+        if surprise == "yes":
+            motv = input("Random movie or TV show? (Enter 'movie' or 'tv show'): ").strip().lower()
+            database = movies if motv == 'movie' else tvShows
+            pick = random.choice(database)
+            print(f"\n Surprise! Watch this {motv}: {pick['title']} ({pick['genre']}, {pick['year']}, {pick['age_rating']})")
+            continue
+
+        motv, preferred_genres, decade, age_ratings = get_user_preferences()
+        recommended = recommend_content(motv, preferred_genres, decade, age_ratings)
+        if recommended:
+            print(f"\nWe recommend watching these {motv}s!:")
+            for title in recommended:
+                print(title)
+        else:
+            print(f"\nNo {motv}s found that match your criteria.")
+
+        rerun = input("\nWould you like to make another search? (yes/no): ").strip().lower()
+        while rerun not in ['yes', 'no']:
+            rerun = input("Invalid input. Please enter 'yes' or 'no': ").strip().lower()
+
+        if rerun == 'no':
+            print("Goodbye! Enjoy your movie or show!")
+            break
+
+
 if __name__ == "__main__":
     main()
