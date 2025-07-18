@@ -22,6 +22,7 @@ movies = [
     {"title": "La La Land", "genre": "Musical", "year": 10, "age_rating": "PG-13"},
     {"title": "Coco", "genre": "Animation", "year": 10, "age_rating": "PG"},
     {"title": "Whiplash", "genre": "Drama", "year": 10, "age_rating": "R"},
+     # Removed duplicate Kiki's Delivery Service
     {"title": "Get Out", "genre": "Horror", "year": 10, "age_rating": "R"},
     {"title": "The Lion King", "genre": "Animation", "year": 90, "age_rating": "G"},
     {"title": "The Incredibles 2", "genre": "Animation", "year": 10, "age_rating": "PG"},
