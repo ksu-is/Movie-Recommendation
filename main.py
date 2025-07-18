@@ -99,7 +99,8 @@ def recommend_content(motv, preferred_genres, decade, age_ratings):
     database = movies if motv == 'movie' else tvShows
 
     for content in database:
-        if (content['genre'] in preferred_genres and
+        # added an option for multiple genres 
+         if ( any(genre == content['genre'] for genre in preferred_genres) and
             content['year'] == decade and
             content['age_rating'] in age_ratings):
             recommended.append(content['title'])
