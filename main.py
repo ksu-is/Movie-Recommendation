@@ -1,4 +1,7 @@
 #list of movies with their genre, year, and age rating
+# importing random for surprise me mode
+import random
+
 movies = [
 #27 Movie options
     {"title": "The Shawshank Redemption", "genre": "Drama", "year": 90, "age_rating": "R"},
