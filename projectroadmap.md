@@ -8,7 +8,8 @@
 - [x] Updated projectroadmap.md     
 
 # Sprint 2:
-- [x]Removed duplicate Kiki's Delivery Service
+- [x] Removed duplicate Kiki's Delivery Service
+- [x] Added a surprise me section
 - [ ] Make small updates and commit messages in repository.    
 
 # Sprint 3:
