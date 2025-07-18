@@ -12,7 +12,10 @@
 - [x] Added a surprise me section
 - [x] Added Tv show that was drama and rated R from the 20's. This is because there was not one before so this is expanding the options.
 - [x] added an option for multiple genres 
-- [ ] Make small updates and commit messages in repository.    
+- [x] added 50's and 60's
+- [x] added not rated as a rating
+- [x] added a not rated tv show and movie
+- [x] Changed .upper() to .title() so that the users input matches how its stored in my code
 
 # Sprint 3:
 - [ ] Create slide presentation.
