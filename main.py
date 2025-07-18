@@ -51,6 +51,8 @@ tvShows = [
     {"title": "Clarkson's Farm", "genre": "Comedy", "year": 20, "age_rating": "PG-13"},
     {"title": "Firefly", "genre": "Action", "year": 00, "age_rating": "PG-13"},
     {"title": "Gravity Fall", "genre": "Comedy", "year": 10, "age_rating": "PG"},
+    # added new show for not rated since there was not one before 
+    {"title": "I, Claudius", "genre": "Drama", "year": 70, "age_rating": "Not Rated"},
     {"title": "Cowboy Bebop", "genre": "Animation", "year": 90, "age_rating": "PG-13"},
     {"title": "Nathan for You", "genre": "Comedy", "year": 10, "age_rating": "PG-13"},
     {"title": "Friends", "genre": "Comedy", "year": 90, "age_rating": "PG-13"},
@@ -81,16 +83,23 @@ def get_user_preferences():
     motv = input("Do you want to watch a movie or a TV show? (Enter 'movie' or 'tv show'): ").strip().lower()
     while motv not in ['movie', 'tv show']:
         motv = input("Invalid choice. Please enter 'movie' or 'tv show': ").strip().lower() 
+
+    
     
     preferred_genres = input("What type of movie are you in the mood for? (Separate by comma ex: Drama, Action): ")
     preferred_genres = [genre.strip().capitalize() for genre in preferred_genres.split(',')]
+
+    #added 50, 60 
     
-    decade = int(input("What decade are you looking for? (ex: 70, 80, 90, 00, 10, 20): "))
+    decade = int(input("What decade are you looking for? (ex: 50, 60, 70, 80, 90, 00, 10, 20): "))
     while decade not in [50, 70, 80, 90, 00, 10, 20]:
         decade = int(input("Invalid decade. Enter a valid decade (e.g., 70, 80, 90, 00, 10, 20): "))
 
-    age_ratings = input("What age ratings do you prefer? (Separate by comma ex: G, PG, PG-13, R): ")
-    age_ratings = [rating.strip().upper() for rating in age_ratings.split(',')]
+    #added not rated
+
+    age_ratings = input("What age ratings do you prefer? (Separate by comma ex: G, PG, PG-13, R, Not Rated): ")
+    #changed .upper() to .title() 
+    age_ratings = [rating.strip().title() for rating in age_ratings.split(',')]
     
     return motv, preferred_genres, decade, age_ratings
 
