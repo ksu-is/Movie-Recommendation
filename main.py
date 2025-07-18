@@ -59,6 +59,7 @@ tvShows = [
     {"title": "Narcos", "genre": "Crime", "year": 10, "age_rating": "R"},
     {"title": "Black Mirror", "genre": "Thriller", "year": 10, "age_rating": "R"},
     {"title": "The Penguin", "genre": "Crime", "year": 20, "age_rating": "R"},
+     # added new show for drama in the 20's since there were none before 
     {"title": "Euphoria", "genre": "Drama", "year": 20, "age_rating": "R"},
     {"title": "Over the Garden Wall", "genre": "Animation", "year": 10, "age_rating": "PG"},
     {"title": "Battlestar Galactica", "genre": "Sci-Fi", "year": 00, "age_rating": "PG-13"},   
